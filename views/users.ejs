@@ -1,0 +1,14 @@
+<%- include('includes/head.ejs') %>
+
+	<h1>List of Names</h1>
+	<% if (names.length > 0) { %>
+		<ul>
+		<% names.forEach((name) => { %>
+			<li><%= name.name %></li>
+		<% }); %>
+		</ul>
+	<% } else { %>
+		<h2>No Names!</h2>
+	<% } %>
+
+<%- include('includes/end.ejs') %>
